@@ -1,0 +1,19 @@
+#sidebar {
+  width: 220px;
+  position: fixed;
+  top: 80px; /* Altura de tu navbar */
+  left: 0;
+  height: calc(100vh - 80px); /* Para que ocupe el resto de la pantalla */
+  overflow-y: auto;
+  border-right: 2px solid #6c757d;
+}
+
+
+#sidebar .nav-link {
+  transition: all 0.3s ease;
+}
+
+#sidebar .nav-link:hover {
+  background-color: #495057;
+  border-radius: 5px;
+}
