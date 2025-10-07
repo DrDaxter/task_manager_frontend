@@ -11,7 +11,7 @@
 
 .navbar-nav .nav-link:hover {
   color: #ffc107 !important;
-  transform: translateY(-2px);
+  transform: translateY(-5px);
 }
 
 /* Activo */

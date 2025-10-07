@@ -1,0 +1,14 @@
+<div class="cartas-container">
+  <!-- Carta para crear nuevo proyecto -->
+  <div class="carta nueva-carta" (click)="crearNuevoProyecto()">
+    <div class="nuevo-icono">+</div>
+    <h5>Nuevo proyecto</h5>
+  </div>
+
+  <!-- Cartas que vienen desde la API -->
+  <div class="carta" *ngFor="let carta of cartas" (click)="onCardClick(carta)">
+    <img [src]="carta.imagen" alt="Imagen aleatoria">
+    <h5>{{ carta.projectName }}</h5>
+    <small>{{ carta.description }}</small>
+  </div>
+</div>

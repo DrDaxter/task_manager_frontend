@@ -1,0 +1,53 @@
+.cartas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.carta {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.carta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+.carta img {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* --- Carta "Nuevo proyecto" --- */
+.nueva-carta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+  color: #555;
+  border: 2px dashed #aaa;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nueva-carta:hover {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.nuevo-icono {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

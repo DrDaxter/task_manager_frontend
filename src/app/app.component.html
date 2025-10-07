@@ -1,13 +1,11 @@
+<app-loader></app-loader> <!-- Loader global -->
+
 <header>
-  <!-- Aquí va tu navbar que me pasaste -->
   <app-navbar></app-navbar>
 </header>
 
 <main class="d-flex">
-  <!-- Sidebar -->
   <app-sidebar></app-sidebar>
-
-  <!-- Contenido -->
   <div class="flex-grow-1 p-4" style="margin-left:220px; margin-top:80px;">
     <router-outlet></router-outlet>
   </div>
