@@ -1,0 +1,18 @@
+<div class="modal-overlay" *ngIf="visible">
+  <div class="modal-content">
+    <h2>Crear nuevo proyecto</h2>
+
+    <form (ngSubmit)="guardar()">
+      <label>Nombre del proyecto:</label>
+      <input type="text" [(ngModel)]="projectName" name="projectName" required />
+
+      <label>Descripción:</label>
+      <textarea [(ngModel)]="description" name="description" required></textarea>
+
+      <div class="modal-actions">
+        <button type="button" (click)="cerrar()">Cancelar</button>
+        <button type="submit">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>
